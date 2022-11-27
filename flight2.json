@@ -1,0 +1,24 @@
+{
+    "nodes": [
+        {
+            "id": "ABQ",
+            "group": 1
+        },
+        {
+            "id": "PHX",
+            "group": 2
+        }
+    ],
+    "links": [
+        {
+            "source": "ABQ",
+            "target": "PHX",
+            "value": 5265
+        },
+        {
+            "source": "PHX",
+            "target": "ABQ",
+            "value": 5273
+        }
+    ]
+}

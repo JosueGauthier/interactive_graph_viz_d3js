@@ -1,0 +1,987 @@
+[
+    {
+      "origin": "ABQ",
+      "destination": "PHX",
+      "count": 5265
+    },
+    {
+      "origin": "ANC",
+      "destination": "SEA",
+      "count": 6257
+    },
+    {
+      "origin": "ATL",
+      "destination": "LGA",
+      "count": 10506
+    },
+    {
+      "origin": "ATL",
+      "destination": "DFW",
+      "count": 9847
+    },
+    {
+      "origin": "ATL",
+      "destination": "MCO",
+      "count": 9613
+    },
+    {
+      "origin": "ATL",
+      "destination": "EWR",
+      "count": 8028
+    },
+    {
+      "origin": "ATL",
+      "destination": "ORD",
+      "count": 7677
+    },
+    {
+      "origin": "ATL",
+      "destination": "FLL",
+      "count": 7665
+    },
+    {
+      "origin": "ATL",
+      "destination": "TPA",
+      "count": 7311
+    },
+    {
+      "origin": "ATL",
+      "destination": "DCA",
+      "count": 7289
+    },
+    {
+      "origin": "ATL",
+      "destination": "PHL",
+      "count": 6915
+    },
+    {
+      "origin": "ATL",
+      "destination": "CLT",
+      "count": 6720
+    },
+    {
+      "origin": "ATL",
+      "destination": "MIA",
+      "count": 6628
+    },
+    {
+      "origin": "ATL",
+      "destination": "BOS",
+      "count": 5990
+    },
+    {
+      "origin": "ATL",
+      "destination": "BWI",
+      "count": 5978
+    },
+    {
+      "origin": "ATL",
+      "destination": "DEN",
+      "count": 5726
+    },
+    {
+      "origin": "ATL",
+      "destination": "JAX",
+      "count": 5656
+    },
+    {
+      "origin": "ATL",
+      "destination": "DTW",
+      "count": 5612
+    },
+    {
+      "origin": "ATL",
+      "destination": "RDU",
+      "count": 5411
+    },
+    {
+      "origin": "ATL",
+      "destination": "LAX",
+      "count": 5406
+    },
+    {
+      "origin": "ATL",
+      "destination": "MSP",
+      "count": 5368
+    },
+    {
+      "origin": "ATL",
+      "destination": "IAD",
+      "count": 5309
+    },
+    {
+      "origin": "ATL",
+      "destination": "IAH",
+      "count": 5268
+    },
+    {
+      "origin": "AUS",
+      "destination": "DAL",
+      "count": 5573
+    },
+    {
+      "origin": "AUS",
+      "destination": "DFW",
+      "count": 5506
+    },
+    {
+      "origin": "BOS",
+      "destination": "LGA",
+      "count": 12029
+    },
+    {
+      "origin": "BOS",
+      "destination": "DCA",
+      "count": 8899
+    },
+    {
+      "origin": "BOS",
+      "destination": "JFK",
+      "count": 7372
+    },
+    {
+      "origin": "BOS",
+      "destination": "ORD",
+      "count": 7085
+    },
+    {
+      "origin": "BOS",
+      "destination": "PHL",
+      "count": 6375
+    },
+    {
+      "origin": "BOS",
+      "destination": "ATL",
+      "count": 5982
+    },
+    {
+      "origin": "BUR",
+      "destination": "OAK",
+      "count": 5423
+    },
+    {
+      "origin": "BUR",
+      "destination": "LAS",
+      "count": 5162
+    },
+    {
+      "origin": "BWI",
+      "destination": "ATL",
+      "count": 5972
+    },
+    {
+      "origin": "CLT",
+      "destination": "ATL",
+      "count": 6722
+    },
+    {
+      "origin": "CLT",
+      "destination": "EWR",
+      "count": 5953
+    },
+    {
+      "origin": "CLT",
+      "destination": "ORD",
+      "count": 5639
+    },
+    {
+      "origin": "CLT",
+      "destination": "LGA",
+      "count": 5339
+    },
+    {
+      "origin": "CVG",
+      "destination": "ORD",
+      "count": 6014
+    },
+    {
+      "origin": "DAL",
+      "destination": "HOU",
+      "count": 9790
+    },
+    {
+      "origin": "DAL",
+      "destination": "AUS",
+      "count": 5583
+    },
+    {
+      "origin": "DCA",
+      "destination": "LGA",
+      "count": 11102
+    },
+    {
+      "origin": "DCA",
+      "destination": "BOS",
+      "count": 8929
+    },
+    {
+      "origin": "DCA",
+      "destination": "ORD",
+      "count": 7427
+    },
+    {
+      "origin": "DCA",
+      "destination": "ATL",
+      "count": 7296
+    },
+    {
+      "origin": "DEN",
+      "destination": "SLC",
+      "count": 8905
+    },
+    {
+      "origin": "DEN",
+      "destination": "LAX",
+      "count": 8811
+    },
+    {
+      "origin": "DEN",
+      "destination": "PHX",
+      "count": 8391
+    },
+    {
+      "origin": "DEN",
+      "destination": "DFW",
+      "count": 8268
+    },
+    {
+      "origin": "DEN",
+      "destination": "LAS",
+      "count": 8147
+    },
+    {
+      "origin": "DEN",
+      "destination": "SEA",
+      "count": 6414
+    },
+    {
+      "origin": "DEN",
+      "destination": "ORD",
+      "count": 6051
+    },
+    {
+      "origin": "DEN",
+      "destination": "ATL",
+      "count": 5903
+    },
+    {
+      "origin": "DEN",
+      "destination": "SFO",
+      "count": 5604
+    },
+    {
+      "origin": "DEN",
+      "destination": "SAN",
+      "count": 5358
+    },
+    {
+      "origin": "DEN",
+      "destination": "MCI",
+      "count": 5111
+    },
+    {
+      "origin": "DEN",
+      "destination": "MSP",
+      "count": 5011
+    },
+    {
+      "origin": "DFW",
+      "destination": "ATL",
+      "count": 9849
+    },
+    {
+      "origin": "DFW",
+      "destination": "DEN",
+      "count": 8193
+    },
+    {
+      "origin": "DFW",
+      "destination": "ORD",
+      "count": 8165
+    },
+    {
+      "origin": "DFW",
+      "destination": "LAX",
+      "count": 6571
+    },
+    {
+      "origin": "DFW",
+      "destination": "IAH",
+      "count": 5526
+    },
+    {
+      "origin": "DFW",
+      "destination": "AUS",
+      "count": 5508
+    },
+    {
+      "origin": "DFW",
+      "destination": "SAT",
+      "count": 5414
+    },
+    {
+      "origin": "DFW",
+      "destination": "PHX",
+      "count": 5388
+    },
+    {
+      "origin": "DFW",
+      "destination": "LGA",
+      "count": 5365
+    },
+    {
+      "origin": "DTW",
+      "destination": "ORD",
+      "count": 7553
+    },
+    {
+      "origin": "DTW",
+      "destination": "ATL",
+      "count": 5612
+    },
+    {
+      "origin": "EWR",
+      "destination": "ATL",
+      "count": 8060
+    },
+    {
+      "origin": "EWR",
+      "destination": "ORD",
+      "count": 7505
+    },
+    {
+      "origin": "EWR",
+      "destination": "CLT",
+      "count": 5945
+    },
+    {
+      "origin": "FLL",
+      "destination": "ATL",
+      "count": 7666
+    },
+    {
+      "origin": "HNL",
+      "destination": "OGG",
+      "count": 12014
+    },
+    {
+      "origin": "HNL",
+      "destination": "LIH",
+      "count": 10769
+    },
+    {
+      "origin": "HNL",
+      "destination": "KOA",
+      "count": 8745
+    },
+    {
+      "origin": "HNL",
+      "destination": "ITO",
+      "count": 7685
+    },
+    {
+      "origin": "HOU",
+      "destination": "DAL",
+      "count": 9766
+    },
+    {
+      "origin": "IAD",
+      "destination": "ATL",
+      "count": 5362
+    },
+    {
+      "origin": "IAH",
+      "destination": "ORD",
+      "count": 5651
+    },
+    {
+      "origin": "IAH",
+      "destination": "DFW",
+      "count": 5539
+    },
+    {
+      "origin": "ITO",
+      "destination": "HNL",
+      "count": 7386
+    },
+    {
+      "origin": "JAX",
+      "destination": "ATL",
+      "count": 5656
+    },
+    {
+      "origin": "JFK",
+      "destination": "LAX",
+      "count": 8078
+    },
+    {
+      "origin": "JFK",
+      "destination": "BOS",
+      "count": 7513
+    },
+    {
+      "origin": "JFK",
+      "destination": "SFO",
+      "count": 6591
+    },
+    {
+      "origin": "JFK",
+      "destination": "MCO",
+      "count": 5373
+    },
+    {
+      "origin": "KOA",
+      "destination": "HNL",
+      "count": 9038
+    },
+    {
+      "origin": "LAS",
+      "destination": "LAX",
+      "count": 11729
+    },
+    {
+      "origin": "LAS",
+      "destination": "PHX",
+      "count": 10626
+    },
+    {
+      "origin": "LAS",
+      "destination": "DEN",
+      "count": 8165
+    },
+    {
+      "origin": "LAS",
+      "destination": "SFO",
+      "count": 6994
+    },
+    {
+      "origin": "LAS",
+      "destination": "SAN",
+      "count": 5895
+    },
+    {
+      "origin": "LAS",
+      "destination": "SLC",
+      "count": 5378
+    },
+    {
+      "origin": "LAS",
+      "destination": "ORD",
+      "count": 5235
+    },
+    {
+      "origin": "LAS",
+      "destination": "BUR",
+      "count": 5154
+    },
+    {
+      "origin": "LAS",
+      "destination": "SEA",
+      "count": 5065
+    },
+    {
+      "origin": "LAX",
+      "destination": "SFO",
+      "count": 13390
+    },
+    {
+      "origin": "LAX",
+      "destination": "LAS",
+      "count": 11773
+    },
+    {
+      "origin": "LAX",
+      "destination": "SAN",
+      "count": 11257
+    },
+    {
+      "origin": "LAX",
+      "destination": "PHX",
+      "count": 9897
+    },
+    {
+      "origin": "LAX",
+      "destination": "SJC",
+      "count": 8908
+    },
+    {
+      "origin": "LAX",
+      "destination": "DEN",
+      "count": 8894
+    },
+    {
+      "origin": "LAX",
+      "destination": "JFK",
+      "count": 8058
+    },
+    {
+      "origin": "LAX",
+      "destination": "OAK",
+      "count": 7583
+    },
+    {
+      "origin": "LAX",
+      "destination": "ORD",
+      "count": 7333
+    },
+    {
+      "origin": "LAX",
+      "destination": "SEA",
+      "count": 6876
+    },
+    {
+      "origin": "LAX",
+      "destination": "DFW",
+      "count": 6571
+    },
+    {
+      "origin": "LAX",
+      "destination": "SMF",
+      "count": 5692
+    },
+    {
+      "origin": "LAX",
+      "destination": "ATL",
+      "count": 5402
+    },
+    {
+      "origin": "LAX",
+      "destination": "SLC",
+      "count": 5178
+    },
+    {
+      "origin": "LGA",
+      "destination": "BOS",
+      "count": 12035
+    },
+    {
+      "origin": "LGA",
+      "destination": "DCA",
+      "count": 11063
+    },
+    {
+      "origin": "LGA",
+      "destination": "ORD",
+      "count": 10862
+    },
+    {
+      "origin": "LGA",
+      "destination": "ATL",
+      "count": 10507
+    },
+    {
+      "origin": "LGA",
+      "destination": "DFW",
+      "count": 5372
+    },
+    {
+      "origin": "LIH",
+      "destination": "HNL",
+      "count": 10407
+    },
+    {
+      "origin": "MCI",
+      "destination": "DEN",
+      "count": 5256
+    },
+    {
+      "origin": "MCO",
+      "destination": "ATL",
+      "count": 9611
+    },
+    {
+      "origin": "MCO",
+      "destination": "PHL",
+      "count": 7034
+    },
+    {
+      "origin": "MCO",
+      "destination": "JFK",
+      "count": 5371
+    },
+    {
+      "origin": "MIA",
+      "destination": "ATL",
+      "count": 6623
+    },
+    {
+      "origin": "MSP",
+      "destination": "ORD",
+      "count": 9356
+    },
+    {
+      "origin": "MSP",
+      "destination": "DTW",
+      "count": 5459
+    },
+    {
+      "origin": "MSP",
+      "destination": "DEN",
+      "count": 5374
+    },
+    {
+      "origin": "MSP",
+      "destination": "ATL",
+      "count": 5369
+    },
+    {
+      "origin": "OAK",
+      "destination": "LAX",
+      "count": 7578
+    },
+    {
+      "origin": "OAK",
+      "destination": "SAN",
+      "count": 5851
+    },
+    {
+      "origin": "OAK",
+      "destination": "BUR",
+      "count": 5420
+    },
+    {
+      "origin": "OAK",
+      "destination": "SEA",
+      "count": 5047
+    },
+    {
+      "origin": "OGG",
+      "destination": "HNL",
+      "count": 12383
+    },
+    {
+      "origin": "ONT",
+      "destination": "PHX",
+      "count": 5628
+    },
+    {
+      "origin": "ORD",
+      "destination": "LGA",
+      "count": 10770
+    },
+    {
+      "origin": "ORD",
+      "destination": "MSP",
+      "count": 9688
+    },
+    {
+      "origin": "ORD",
+      "destination": "DFW",
+      "count": 8093
+    },
+    {
+      "origin": "ORD",
+      "destination": "DTW",
+      "count": 7602
+    },
+    {
+      "origin": "ORD",
+      "destination": "ATL",
+      "count": 7449
+    },
+    {
+      "origin": "ORD",
+      "destination": "DCA",
+      "count": 7430
+    },
+    {
+      "origin": "ORD",
+      "destination": "EWR",
+      "count": 7174
+    },
+    {
+      "origin": "ORD",
+      "destination": "BOS",
+      "count": 7133
+    },
+    {
+      "origin": "ORD",
+      "destination": "LAX",
+      "count": 6974
+    },
+    {
+      "origin": "ORD",
+      "destination": "PHL",
+      "count": 6733
+    },
+    {
+      "origin": "ORD",
+      "destination": "CLT",
+      "count": 6013
+    },
+    {
+      "origin": "ORD",
+      "destination": "CVG",
+      "count": 5993
+    },
+    {
+      "origin": "ORD",
+      "destination": "DEN",
+      "count": 5773
+    },
+    {
+      "origin": "ORD",
+      "destination": "SFO",
+      "count": 5524
+    },
+    {
+      "origin": "ORD",
+      "destination": "IAH",
+      "count": 5463
+    },
+    {
+      "origin": "ORD",
+      "destination": "LAS",
+      "count": 5257
+    },
+    {
+      "origin": "ORD",
+      "destination": "PHX",
+      "count": 5124
+    },
+    {
+      "origin": "PHL",
+      "destination": "ORD",
+      "count": 7078
+    },
+    {
+      "origin": "PHL",
+      "destination": "MCO",
+      "count": 7032
+    },
+    {
+      "origin": "PHL",
+      "destination": "ATL",
+      "count": 6918
+    },
+    {
+      "origin": "PHL",
+      "destination": "BOS",
+      "count": 6384
+    },
+    {
+      "origin": "PHX",
+      "destination": "LAS",
+      "count": 10337
+    },
+    {
+      "origin": "PHX",
+      "destination": "LAX",
+      "count": 9992
+    },
+    {
+      "origin": "PHX",
+      "destination": "DEN",
+      "count": 8402
+    },
+    {
+      "origin": "PHX",
+      "destination": "SAN",
+      "count": 7609
+    },
+    {
+      "origin": "PHX",
+      "destination": "SLC",
+      "count": 7177
+    },
+    {
+      "origin": "PHX",
+      "destination": "ONT",
+      "count": 5627
+    },
+    {
+      "origin": "PHX",
+      "destination": "SNA",
+      "count": 5497
+    },
+    {
+      "origin": "PHX",
+      "destination": "DFW",
+      "count": 5387
+    },
+    {
+      "origin": "PHX",
+      "destination": "ABQ",
+      "count": 5234
+    },
+    {
+      "origin": "PHX",
+      "destination": "ORD",
+      "count": 5130
+    },
+    {
+      "origin": "PHX",
+      "destination": "SEA",
+      "count": 5072
+    },
+    {
+      "origin": "RDU",
+      "destination": "ATL",
+      "count": 5418
+    },
+    {
+      "origin": "SAN",
+      "destination": "LAX",
+      "count": 11224
+    },
+    {
+      "origin": "SAN",
+      "destination": "PHX",
+      "count": 7581
+    },
+    {
+      "origin": "SAN",
+      "destination": "SFO",
+      "count": 6769
+    },
+    {
+      "origin": "SAN",
+      "destination": "LAS",
+      "count": 5902
+    },
+    {
+      "origin": "SAN",
+      "destination": "OAK",
+      "count": 5831
+    },
+    {
+      "origin": "SAN",
+      "destination": "SJC",
+      "count": 5286
+    },
+    {
+      "origin": "SAN",
+      "destination": "DEN",
+      "count": 5263
+    },
+    {
+      "origin": "SAT",
+      "destination": "DFW",
+      "count": 5413
+    },
+    {
+      "origin": "SEA",
+      "destination": "LAX",
+      "count": 6865
+    },
+    {
+      "origin": "SEA",
+      "destination": "DEN",
+      "count": 6623
+    },
+    {
+      "origin": "SEA",
+      "destination": "ANC",
+      "count": 6256
+    },
+    {
+      "origin": "SEA",
+      "destination": "SFO",
+      "count": 5409
+    },
+    {
+      "origin": "SEA",
+      "destination": "OAK",
+      "count": 5095
+    },
+    {
+      "origin": "SEA",
+      "destination": "PHX",
+      "count": 5062
+    },
+    {
+      "origin": "SEA",
+      "destination": "LAS",
+      "count": 5051
+    },
+    {
+      "origin": "SFO",
+      "destination": "LAX",
+      "count": 13788
+    },
+    {
+      "origin": "SFO",
+      "destination": "LAS",
+      "count": 7007
+    },
+    {
+      "origin": "SFO",
+      "destination": "JFK",
+      "count": 6971
+    },
+    {
+      "origin": "SFO",
+      "destination": "SAN",
+      "count": 6312
+    },
+    {
+      "origin": "SFO",
+      "destination": "ORD",
+      "count": 5746
+    },
+    {
+      "origin": "SFO",
+      "destination": "SEA",
+      "count": 5414
+    },
+    {
+      "origin": "SFO",
+      "destination": "DEN",
+      "count": 5374
+    },
+    {
+      "origin": "SJC",
+      "destination": "LAX",
+      "count": 8939
+    },
+    {
+      "origin": "SJC",
+      "destination": "SNA",
+      "count": 5383
+    },
+    {
+      "origin": "SJC",
+      "destination": "SAN",
+      "count": 5254
+    },
+    {
+      "origin": "SLC",
+      "destination": "DEN",
+      "count": 9269
+    },
+    {
+      "origin": "SLC",
+      "destination": "PHX",
+      "count": 7168
+    },
+    {
+      "origin": "SLC",
+      "destination": "LAS",
+      "count": 5373
+    },
+    {
+      "origin": "SLC",
+      "destination": "LAX",
+      "count": 5178
+    },
+    {
+      "origin": "SMF",
+      "destination": "LAX",
+      "count": 5717
+    },
+    {
+      "origin": "SNA",
+      "destination": "PHX",
+      "count": 5477
+    },
+    {
+      "origin": "SNA",
+      "destination": "SJC",
+      "count": 5401
+    },
+    {
+      "origin": "TPA",
+      "destination": "ATL",
+      "count": 7313
+    }
+  ]

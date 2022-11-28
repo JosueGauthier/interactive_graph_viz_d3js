@@ -35,43 +35,7 @@ window.onload = () => {
     .force("center", d3.forceCenter(width / 2, height / 2));
 
 
-
-
-
-
-
-
-
-  var csv = `type,1,2,3,4
-  type1,54.69801915,84.4717406,81.87766667,66.48516667
-type2,51.57399106,84.23170179,82.13950136,67.37540461`;
-
-
-
-  var data = d3.csvParse(csv);
-
-  var nested = data.map(function (d) {
-    var obj = {
-      key: d.type,
-      values: []
-    };
-    for (var prop in d) {
-      if (prop !== "type") {
-        obj.values.push({
-          [prop]: d[prop]
-        })
-      }
-    }
-    return obj;
-  });
-
-  console.log(nested)
-
-
-
-
-
-  d3.json("flight2.json").then(function (data) {
+  d3.json("input.json").then(function (data) {
 
 
     var link = svg.append("g")
@@ -79,7 +43,7 @@ type2,51.57399106,84.23170179,82.13950136,67.37540461`;
       .selectAll("line")
       .data(data.links)
       .enter().append("line")
-      .attr("stroke-width", function (d) { return Math.sqrt(d.value); });
+      .attr("stroke-width", function (d) { return Math.sqrt(d.value/1000); });
 
     var node = svg.append("g")
       .attr("class", "nodes")

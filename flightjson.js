@@ -15,11 +15,6 @@ csv()
     })
 
 
-
-
-
-
-
 function formatData(data) {
 
 
@@ -37,25 +32,28 @@ function formatData(data) {
 
         if (r.origin) {
             console.log(r.origin)
-            
 
-            
-            var index = formatted.nodes.findIndex(x => x.id == r.origin);
-            // here you can check specific property for an object whether it exist in your array or not
+            var indexOrigin = formatted.nodes.findIndex(x => x.id == r.origin);
+            var indexDestination = formatted.nodes.findIndex(x => x.id == r.destination);
 
-            if (index === -1) {
-                formatted.nodes.push({ id: r.origin, group: compteur });
+            if (indexOrigin === -1) {
+                formatted.nodes.push({ id: r.origin, group: compteur, totalFlight: r.count });
                 compteur++;
-                
+
+            } else {
+                formatted.nodes[indexOrigin].totalFlight = parseInt(formatted.nodes[indexOrigin].totalFlight) + parseInt(r.count)
             }
 
-            //index === -1 ?arrayObj.push({ your_object }) : console.log("object already exists")
 
+            if (indexDestination === -1) {
+                formatted.nodes.push({ id: r.destination, group: compteur, totalFlight: r.count });
+                compteur++;
 
-            /*  if(formatted.nodes.indexOf({r.origin}) === -1) {
-                 
-                 
-             } */
+            }
+            else {
+                formatted.nodes[indexDestination].totalFlight = parseInt(formatted.nodes[indexDestination].totalFlight) + parseInt(r.count)
+            }
+
 
 
         }
@@ -68,13 +66,11 @@ function formatData(data) {
     //do something with the finished product
     console.log(formatted);
     var json = JSON.stringify(formatted);
-    
-    //fs.writeFile('myjsonfile.json', json, 'utf8', callback);
 
-    fs.writeFile ("input.json", JSON.stringify(formatted), function(err) {
+    fs.writeFile("input.json", JSON.stringify(formatted), function (err) {
         if (err) throw err;
         console.log('complete');
-        }
+    }
     );
 
 }

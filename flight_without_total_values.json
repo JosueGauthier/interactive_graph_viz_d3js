@@ -2,243 +2,195 @@
     "nodes": [
         {
             "id": "ABQ",
-            "group": 1,
-            "totalFlight": 10499
-        },
-        {
-            "id": "PHX",
-            "group": 2,
-            "totalFlight": 151071
+            "group": 1
         },
         {
             "id": "ANC",
-            "group": 3,
-            "totalFlight": 12513
-        },
-        {
-            "id": "SEA",
-            "group": 4,
-            "totalFlight": 80506
+            "group": 2
         },
         {
             "id": "ATL",
-            "group": 5,
-            "totalFlight": 282613
-        },
-        {
-            "id": "LGA",
-            "group": 6,
-            "totalFlight": 104950
-        },
-        {
-            "id": "DFW",
-            "group": 7,
-            "totalFlight": 119975
-        },
-        {
-            "id": "MCO",
-            "group": 8,
-            "totalFlight": 44034
-        },
-        {
-            "id": "EWR",
-            "group": 9,
-            "totalFlight": 42665
-        },
-        {
-            "id": "ORD",
-            "group": 10,
-            "totalFlight": 237700
-        },
-        {
-            "id": "FLL",
-            "group": 11,
-            "totalFlight": 15331
-        },
-        {
-            "id": "TPA",
-            "group": 12,
-            "totalFlight": 14624
-        },
-        {
-            "id": "DCA",
-            "group": 13,
-            "totalFlight": 69435
-        },
-        {
-            "id": "PHL",
-            "group": 14,
-            "totalFlight": 54469
-        },
-        {
-            "id": "CLT",
-            "group": 15,
-            "totalFlight": 42331
-        },
-        {
-            "id": "MIA",
-            "group": 16,
-            "totalFlight": 13251
-        },
-        {
-            "id": "BOS",
-            "group": 17,
-            "totalFlight": 95726
-        },
-        {
-            "id": "BWI",
-            "group": 18,
-            "totalFlight": 11950
-        },
-        {
-            "id": "DEN",
-            "group": 19,
-            "totalFlight": 164286
-        },
-        {
-            "id": "JAX",
-            "group": 20,
-            "totalFlight": 11312
-        },
-        {
-            "id": "DTW",
-            "group": 21,
-            "totalFlight": 31838
-        },
-        {
-            "id": "RDU",
-            "group": 22,
-            "totalFlight": 10829
-        },
-        {
-            "id": "LAX",
-            "group": 23,
-            "totalFlight": 233662
-        },
-        {
-            "id": "MSP",
-            "group": 24,
-            "totalFlight": 45625
-        },
-        {
-            "id": "IAD",
-            "group": 25,
-            "totalFlight": 10671
-        },
-        {
-            "id": "IAH",
-            "group": 26,
-            "totalFlight": 27447
+            "group": 3
         },
         {
             "id": "AUS",
-            "group": 27,
-            "totalFlight": 22170
+            "group": 4
         },
         {
-            "id": "DAL",
-            "group": 28,
-            "totalFlight": 30712
-        },
-        {
-            "id": "JFK",
-            "group": 29,
-            "totalFlight": 55327
+            "id": "BOS",
+            "group": 5
         },
         {
             "id": "BUR",
-            "group": 30,
-            "totalFlight": 21159
+            "group": 6
         },
         {
-            "id": "OAK",
-            "group": 31,
-            "totalFlight": 47828
+            "id": "BWI",
+            "group": 7
         },
         {
-            "id": "LAS",
-            "group": 32,
-            "totalFlight": 128250
+            "id": "CLT",
+            "group": 8
         },
         {
             "id": "CVG",
-            "group": 33,
-            "totalFlight": 12007
+            "group": 9
         },
         {
-            "id": "HOU",
-            "group": 34,
-            "totalFlight": 19556
+            "id": "DAL",
+            "group": 10
         },
         {
-            "id": "SLC",
-            "group": 35,
-            "totalFlight": 53626
+            "id": "DCA",
+            "group": 11
         },
         {
-            "id": "SFO",
-            "group": 36,
-            "totalFlight": 100893
+            "id": "DEN",
+            "group": 12
         },
         {
-            "id": "SAN",
-            "group": 37,
-            "totalFlight": 95392
+            "id": "DFW",
+            "group": 13
         },
         {
-            "id": "MCI",
-            "group": 38,
-            "totalFlight": 10367
+            "id": "DTW",
+            "group": 14
         },
         {
-            "id": "SAT",
-            "group": 39,
-            "totalFlight": 10827
+            "id": "EWR",
+            "group": 15
+        },
+        {
+            "id": "FLL",
+            "group": 16
         },
         {
             "id": "HNL",
-            "group": 40,
-            "totalFlight": 78427
+            "group": 17
         },
         {
-            "id": "OGG",
-            "group": 41,
-            "totalFlight": 24397
+            "id": "HOU",
+            "group": 18
         },
         {
-            "id": "LIH",
-            "group": 42,
-            "totalFlight": 21176
+            "id": "IAD",
+            "group": 19
         },
         {
-            "id": "KOA",
-            "group": 43,
-            "totalFlight": 17783
+            "id": "IAH",
+            "group": 20
         },
         {
             "id": "ITO",
-            "group": 44,
-            "totalFlight": 15071
+            "group": 21
         },
         {
-            "id": "SJC",
-            "group": 45,
-            "totalFlight": 39171
+            "id": "JAX",
+            "group": 22
         },
         {
-            "id": "SMF",
-            "group": 46,
-            "totalFlight": 11409
+            "id": "JFK",
+            "group": 23
+        },
+        {
+            "id": "KOA",
+            "group": 24
+        },
+        {
+            "id": "LAS",
+            "group": 25
+        },
+        {
+            "id": "LAX",
+            "group": 26
+        },
+        {
+            "id": "LGA",
+            "group": 27
+        },
+        {
+            "id": "LIH",
+            "group": 28
+        },
+        {
+            "id": "MCI",
+            "group": 29
+        },
+        {
+            "id": "MCO",
+            "group": 30
+        },
+        {
+            "id": "MIA",
+            "group": 31
+        },
+        {
+            "id": "MSP",
+            "group": 32
+        },
+        {
+            "id": "OAK",
+            "group": 33
+        },
+        {
+            "id": "OGG",
+            "group": 34
         },
         {
             "id": "ONT",
-            "group": 47,
-            "totalFlight": 11255
+            "group": 35
+        },
+        {
+            "id": "ORD",
+            "group": 36
+        },
+        {
+            "id": "PHL",
+            "group": 37
+        },
+        {
+            "id": "PHX",
+            "group": 38
+        },
+        {
+            "id": "RDU",
+            "group": 39
+        },
+        {
+            "id": "SAN",
+            "group": 40
+        },
+        {
+            "id": "SAT",
+            "group": 41
+        },
+        {
+            "id": "SEA",
+            "group": 42
+        },
+        {
+            "id": "SFO",
+            "group": 43
+        },
+        {
+            "id": "SJC",
+            "group": 44
+        },
+        {
+            "id": "SLC",
+            "group": 45
+        },
+        {
+            "id": "SMF",
+            "group": 46
         },
         {
             "id": "SNA",
-            "group": 48,
-            "totalFlight": 21758
+            "group": 47
+        },
+        {
+            "id": "TPA",
+            "group": 48
         }
     ],
     "links": [

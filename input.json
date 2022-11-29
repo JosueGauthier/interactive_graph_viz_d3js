@@ -245,987 +245,702 @@
         {
             "source": "ABQ",
             "target": "PHX",
-            "value": "5265"
+            "totalFlightBeetween": 10499,
+            "departure": 5265,
+            "arrival": 5234
         },
         {
             "source": "ANC",
             "target": "SEA",
-            "value": "6257"
+            "totalFlightBeetween": 12513,
+            "departure": 6257,
+            "arrival": 6256
         },
         {
             "source": "ATL",
             "target": "LGA",
-            "value": "10506"
+            "totalFlightBeetween": 21013,
+            "departure": 10506,
+            "arrival": 10507
         },
         {
             "source": "ATL",
             "target": "DFW",
-            "value": "9847"
+            "totalFlightBeetween": 19696,
+            "departure": 9847,
+            "arrival": 9849
         },
         {
             "source": "ATL",
             "target": "MCO",
-            "value": "9613"
+            "totalFlightBeetween": 19224,
+            "departure": 9613,
+            "arrival": 9611
         },
         {
             "source": "ATL",
             "target": "EWR",
-            "value": "8028"
+            "totalFlightBeetween": 16088,
+            "departure": 8028,
+            "arrival": 8060
         },
         {
             "source": "ATL",
             "target": "ORD",
-            "value": "7677"
+            "totalFlightBeetween": 15126,
+            "departure": 7677,
+            "arrival": 7449
         },
         {
             "source": "ATL",
             "target": "FLL",
-            "value": "7665"
+            "totalFlightBeetween": 15331,
+            "departure": 7665,
+            "arrival": 7666
         },
         {
             "source": "ATL",
             "target": "TPA",
-            "value": "7311"
+            "totalFlightBeetween": 14624,
+            "departure": 7311,
+            "arrival": 7313
         },
         {
             "source": "ATL",
             "target": "DCA",
-            "value": "7289"
+            "totalFlightBeetween": 14585,
+            "departure": 7289,
+            "arrival": 7296
         },
         {
             "source": "ATL",
             "target": "PHL",
-            "value": "6915"
+            "totalFlightBeetween": 13833,
+            "departure": 6915,
+            "arrival": 6918
         },
         {
             "source": "ATL",
             "target": "CLT",
-            "value": "6720"
+            "totalFlightBeetween": 13442,
+            "departure": 6720,
+            "arrival": 6722
         },
         {
             "source": "ATL",
             "target": "MIA",
-            "value": "6628"
+            "totalFlightBeetween": 13251,
+            "departure": 6628,
+            "arrival": 6623
         },
         {
             "source": "ATL",
             "target": "BOS",
-            "value": "5990"
+            "totalFlightBeetween": 11972,
+            "departure": 5990,
+            "arrival": 5982
         },
         {
             "source": "ATL",
             "target": "BWI",
-            "value": "5978"
+            "totalFlightBeetween": 11950,
+            "departure": 5978,
+            "arrival": 5972
         },
         {
             "source": "ATL",
             "target": "DEN",
-            "value": "5726"
+            "totalFlightBeetween": 11629,
+            "departure": 5726,
+            "arrival": 5903
         },
         {
             "source": "ATL",
             "target": "JAX",
-            "value": "5656"
+            "totalFlightBeetween": 11312,
+            "departure": 5656,
+            "arrival": 5656
         },
         {
             "source": "ATL",
             "target": "DTW",
-            "value": "5612"
+            "totalFlightBeetween": 11224,
+            "departure": 5612,
+            "arrival": 5612
         },
         {
             "source": "ATL",
             "target": "RDU",
-            "value": "5411"
+            "totalFlightBeetween": 10829,
+            "departure": 5411,
+            "arrival": 5418
         },
         {
             "source": "ATL",
             "target": "LAX",
-            "value": "5406"
+            "totalFlightBeetween": 10808,
+            "departure": 5406,
+            "arrival": 5402
         },
         {
             "source": "ATL",
             "target": "MSP",
-            "value": "5368"
+            "totalFlightBeetween": 10737,
+            "departure": 5368,
+            "arrival": 5369
         },
         {
             "source": "ATL",
             "target": "IAD",
-            "value": "5309"
+            "totalFlightBeetween": 10671,
+            "departure": 5309,
+            "arrival": 5362
         },
         {
             "source": "ATL",
             "target": "IAH",
-            "value": "5268"
+            "totalFlightBeetween": "5268",
+            "departure": 5268,
+            "arrival": 0
         },
         {
             "source": "AUS",
             "target": "DAL",
-            "value": "5573"
+            "totalFlightBeetween": 11156,
+            "departure": 5573,
+            "arrival": 5583
         },
         {
             "source": "AUS",
             "target": "DFW",
-            "value": "5506"
+            "totalFlightBeetween": 11014,
+            "departure": 5506,
+            "arrival": 5508
         },
         {
             "source": "BOS",
             "target": "LGA",
-            "value": "12029"
+            "totalFlightBeetween": 24064,
+            "departure": 12029,
+            "arrival": 12035
         },
         {
             "source": "BOS",
             "target": "DCA",
-            "value": "8899"
+            "totalFlightBeetween": 17828,
+            "departure": 8899,
+            "arrival": 8929
         },
         {
             "source": "BOS",
             "target": "JFK",
-            "value": "7372"
+            "totalFlightBeetween": 14885,
+            "departure": 7372,
+            "arrival": 7513
         },
         {
             "source": "BOS",
             "target": "ORD",
-            "value": "7085"
+            "totalFlightBeetween": 14218,
+            "departure": 7085,
+            "arrival": 7133
         },
         {
             "source": "BOS",
             "target": "PHL",
-            "value": "6375"
-        },
-        {
-            "source": "BOS",
-            "target": "ATL",
-            "value": "5982"
+            "totalFlightBeetween": 12759,
+            "departure": 6375,
+            "arrival": 6384
         },
         {
             "source": "BUR",
             "target": "OAK",
-            "value": "5423"
+            "totalFlightBeetween": 10843,
+            "departure": 5423,
+            "arrival": 5420
         },
         {
             "source": "BUR",
             "target": "LAS",
-            "value": "5162"
-        },
-        {
-            "source": "BWI",
-            "target": "ATL",
-            "value": "5972"
-        },
-        {
-            "source": "CLT",
-            "target": "ATL",
-            "value": "6722"
+            "totalFlightBeetween": 10316,
+            "departure": 5162,
+            "arrival": 5154
         },
         {
             "source": "CLT",
             "target": "EWR",
-            "value": "5953"
+            "totalFlightBeetween": 11898,
+            "departure": 5953,
+            "arrival": 5945
         },
         {
             "source": "CLT",
             "target": "ORD",
-            "value": "5639"
+            "totalFlightBeetween": 11652,
+            "departure": 5639,
+            "arrival": 6013
         },
         {
             "source": "CLT",
             "target": "LGA",
-            "value": "5339"
+            "totalFlightBeetween": "5339",
+            "departure": 5339,
+            "arrival": 0
         },
         {
             "source": "CVG",
             "target": "ORD",
-            "value": "6014"
+            "totalFlightBeetween": 12007,
+            "departure": 6014,
+            "arrival": 5993
         },
         {
             "source": "DAL",
             "target": "HOU",
-            "value": "9790"
-        },
-        {
-            "source": "DAL",
-            "target": "AUS",
-            "value": "5583"
+            "totalFlightBeetween": 19556,
+            "departure": 9790,
+            "arrival": 9766
         },
         {
             "source": "DCA",
             "target": "LGA",
-            "value": "11102"
-        },
-        {
-            "source": "DCA",
-            "target": "BOS",
-            "value": "8929"
+            "totalFlightBeetween": 22165,
+            "departure": 11102,
+            "arrival": 11063
         },
         {
             "source": "DCA",
             "target": "ORD",
-            "value": "7427"
-        },
-        {
-            "source": "DCA",
-            "target": "ATL",
-            "value": "7296"
+            "totalFlightBeetween": 14857,
+            "departure": 7427,
+            "arrival": 7430
         },
         {
             "source": "DEN",
             "target": "SLC",
-            "value": "8905"
+            "totalFlightBeetween": 18174,
+            "departure": 8905,
+            "arrival": 9269
         },
         {
             "source": "DEN",
             "target": "LAX",
-            "value": "8811"
+            "totalFlightBeetween": 17705,
+            "departure": 8811,
+            "arrival": 8894
         },
         {
             "source": "DEN",
             "target": "PHX",
-            "value": "8391"
+            "totalFlightBeetween": 16793,
+            "departure": 8391,
+            "arrival": 8402
         },
         {
             "source": "DEN",
             "target": "DFW",
-            "value": "8268"
+            "totalFlightBeetween": 16461,
+            "departure": 8268,
+            "arrival": 8193
         },
         {
             "source": "DEN",
             "target": "LAS",
-            "value": "8147"
+            "totalFlightBeetween": 16312,
+            "departure": 8147,
+            "arrival": 8165
         },
         {
             "source": "DEN",
             "target": "SEA",
-            "value": "6414"
+            "totalFlightBeetween": 13037,
+            "departure": 6414,
+            "arrival": 6623
         },
         {
             "source": "DEN",
             "target": "ORD",
-            "value": "6051"
-        },
-        {
-            "source": "DEN",
-            "target": "ATL",
-            "value": "5903"
+            "totalFlightBeetween": 11824,
+            "departure": 6051,
+            "arrival": 5773
         },
         {
             "source": "DEN",
             "target": "SFO",
-            "value": "5604"
+            "totalFlightBeetween": 10978,
+            "departure": 5604,
+            "arrival": 5374
         },
         {
             "source": "DEN",
             "target": "SAN",
-            "value": "5358"
+            "totalFlightBeetween": 10621,
+            "departure": 5358,
+            "arrival": 5263
         },
         {
             "source": "DEN",
             "target": "MCI",
-            "value": "5111"
+            "totalFlightBeetween": 10367,
+            "departure": 5111,
+            "arrival": 5256
         },
         {
             "source": "DEN",
             "target": "MSP",
-            "value": "5011"
-        },
-        {
-            "source": "DFW",
-            "target": "ATL",
-            "value": "9849"
-        },
-        {
-            "source": "DFW",
-            "target": "DEN",
-            "value": "8193"
+            "totalFlightBeetween": 10385,
+            "departure": 5011,
+            "arrival": 5374
         },
         {
             "source": "DFW",
             "target": "ORD",
-            "value": "8165"
+            "totalFlightBeetween": 16258,
+            "departure": 8165,
+            "arrival": 8093
         },
         {
             "source": "DFW",
             "target": "LAX",
-            "value": "6571"
+            "totalFlightBeetween": 13142,
+            "departure": 6571,
+            "arrival": 6571
         },
         {
             "source": "DFW",
             "target": "IAH",
-            "value": "5526"
-        },
-        {
-            "source": "DFW",
-            "target": "AUS",
-            "value": "5508"
+            "totalFlightBeetween": 11065,
+            "departure": 5526,
+            "arrival": 5539
         },
         {
             "source": "DFW",
             "target": "SAT",
-            "value": "5414"
+            "totalFlightBeetween": 10827,
+            "departure": 5414,
+            "arrival": 5413
         },
         {
             "source": "DFW",
             "target": "PHX",
-            "value": "5388"
+            "totalFlightBeetween": 10775,
+            "departure": 5388,
+            "arrival": 5387
         },
         {
             "source": "DFW",
             "target": "LGA",
-            "value": "5365"
+            "totalFlightBeetween": 10737,
+            "departure": 5365,
+            "arrival": 5372
         },
         {
             "source": "DTW",
             "target": "ORD",
-            "value": "7553"
-        },
-        {
-            "source": "DTW",
-            "target": "ATL",
-            "value": "5612"
-        },
-        {
-            "source": "EWR",
-            "target": "ATL",
-            "value": "8060"
+            "totalFlightBeetween": 15155,
+            "departure": 7553,
+            "arrival": 7602
         },
         {
             "source": "EWR",
             "target": "ORD",
-            "value": "7505"
-        },
-        {
-            "source": "EWR",
-            "target": "CLT",
-            "value": "5945"
-        },
-        {
-            "source": "FLL",
-            "target": "ATL",
-            "value": "7666"
+            "totalFlightBeetween": 14679,
+            "departure": 7505,
+            "arrival": 7174
         },
         {
             "source": "HNL",
             "target": "OGG",
-            "value": "12014"
+            "totalFlightBeetween": 24397,
+            "departure": 12014,
+            "arrival": 12383
         },
         {
             "source": "HNL",
             "target": "LIH",
-            "value": "10769"
+            "totalFlightBeetween": 21176,
+            "departure": 10769,
+            "arrival": 10407
         },
         {
             "source": "HNL",
             "target": "KOA",
-            "value": "8745"
+            "totalFlightBeetween": 17783,
+            "departure": 8745,
+            "arrival": 9038
         },
         {
             "source": "HNL",
             "target": "ITO",
-            "value": "7685"
-        },
-        {
-            "source": "HOU",
-            "target": "DAL",
-            "value": "9766"
-        },
-        {
-            "source": "IAD",
-            "target": "ATL",
-            "value": "5362"
+            "totalFlightBeetween": 15071,
+            "departure": 7685,
+            "arrival": 7386
         },
         {
             "source": "IAH",
             "target": "ORD",
-            "value": "5651"
-        },
-        {
-            "source": "IAH",
-            "target": "DFW",
-            "value": "5539"
-        },
-        {
-            "source": "ITO",
-            "target": "HNL",
-            "value": "7386"
-        },
-        {
-            "source": "JAX",
-            "target": "ATL",
-            "value": "5656"
+            "totalFlightBeetween": 11114,
+            "departure": 5651,
+            "arrival": 5463
         },
         {
             "source": "JFK",
             "target": "LAX",
-            "value": "8078"
-        },
-        {
-            "source": "JFK",
-            "target": "BOS",
-            "value": "7513"
+            "totalFlightBeetween": 16136,
+            "departure": 8078,
+            "arrival": 8058
         },
         {
             "source": "JFK",
             "target": "SFO",
-            "value": "6591"
+            "totalFlightBeetween": 13562,
+            "departure": 6591,
+            "arrival": 6971
         },
         {
             "source": "JFK",
             "target": "MCO",
-            "value": "5373"
-        },
-        {
-            "source": "KOA",
-            "target": "HNL",
-            "value": "9038"
+            "totalFlightBeetween": 10744,
+            "departure": 5373,
+            "arrival": 5371
         },
         {
             "source": "LAS",
             "target": "LAX",
-            "value": "11729"
+            "totalFlightBeetween": 23502,
+            "departure": 11729,
+            "arrival": 11773
         },
         {
             "source": "LAS",
             "target": "PHX",
-            "value": "10626"
-        },
-        {
-            "source": "LAS",
-            "target": "DEN",
-            "value": "8165"
+            "totalFlightBeetween": 20963,
+            "departure": 10626,
+            "arrival": 10337
         },
         {
             "source": "LAS",
             "target": "SFO",
-            "value": "6994"
+            "totalFlightBeetween": 14001,
+            "departure": 6994,
+            "arrival": 7007
         },
         {
             "source": "LAS",
             "target": "SAN",
-            "value": "5895"
+            "totalFlightBeetween": 11797,
+            "departure": 5895,
+            "arrival": 5902
         },
         {
             "source": "LAS",
             "target": "SLC",
-            "value": "5378"
+            "totalFlightBeetween": 10751,
+            "departure": 5378,
+            "arrival": 5373
         },
         {
             "source": "LAS",
             "target": "ORD",
-            "value": "5235"
-        },
-        {
-            "source": "LAS",
-            "target": "BUR",
-            "value": "5154"
+            "totalFlightBeetween": 10492,
+            "departure": 5235,
+            "arrival": 5257
         },
         {
             "source": "LAS",
             "target": "SEA",
-            "value": "5065"
+            "totalFlightBeetween": 10116,
+            "departure": 5065,
+            "arrival": 5051
         },
         {
             "source": "LAX",
             "target": "SFO",
-            "value": "13390"
-        },
-        {
-            "source": "LAX",
-            "target": "LAS",
-            "value": "11773"
+            "totalFlightBeetween": 27178,
+            "departure": 13390,
+            "arrival": 13788
         },
         {
             "source": "LAX",
             "target": "SAN",
-            "value": "11257"
+            "totalFlightBeetween": 22481,
+            "departure": 11257,
+            "arrival": 11224
         },
         {
             "source": "LAX",
             "target": "PHX",
-            "value": "9897"
+            "totalFlightBeetween": 19889,
+            "departure": 9897,
+            "arrival": 9992
         },
         {
             "source": "LAX",
             "target": "SJC",
-            "value": "8908"
-        },
-        {
-            "source": "LAX",
-            "target": "DEN",
-            "value": "8894"
-        },
-        {
-            "source": "LAX",
-            "target": "JFK",
-            "value": "8058"
+            "totalFlightBeetween": 17847,
+            "departure": 8908,
+            "arrival": 8939
         },
         {
             "source": "LAX",
             "target": "OAK",
-            "value": "7583"
+            "totalFlightBeetween": 15161,
+            "departure": 7583,
+            "arrival": 7578
         },
         {
             "source": "LAX",
             "target": "ORD",
-            "value": "7333"
+            "totalFlightBeetween": 14307,
+            "departure": 7333,
+            "arrival": 6974
         },
         {
             "source": "LAX",
             "target": "SEA",
-            "value": "6876"
-        },
-        {
-            "source": "LAX",
-            "target": "DFW",
-            "value": "6571"
+            "totalFlightBeetween": 13741,
+            "departure": 6876,
+            "arrival": 6865
         },
         {
             "source": "LAX",
             "target": "SMF",
-            "value": "5692"
-        },
-        {
-            "source": "LAX",
-            "target": "ATL",
-            "value": "5402"
+            "totalFlightBeetween": 11409,
+            "departure": 5692,
+            "arrival": 5717
         },
         {
             "source": "LAX",
             "target": "SLC",
-            "value": "5178"
-        },
-        {
-            "source": "LGA",
-            "target": "BOS",
-            "value": "12035"
-        },
-        {
-            "source": "LGA",
-            "target": "DCA",
-            "value": "11063"
+            "totalFlightBeetween": 10356,
+            "departure": 5178,
+            "arrival": 5178
         },
         {
             "source": "LGA",
             "target": "ORD",
-            "value": "10862"
-        },
-        {
-            "source": "LGA",
-            "target": "ATL",
-            "value": "10507"
-        },
-        {
-            "source": "LGA",
-            "target": "DFW",
-            "value": "5372"
-        },
-        {
-            "source": "LIH",
-            "target": "HNL",
-            "value": "10407"
-        },
-        {
-            "source": "MCI",
-            "target": "DEN",
-            "value": "5256"
-        },
-        {
-            "source": "MCO",
-            "target": "ATL",
-            "value": "9611"
+            "totalFlightBeetween": 21632,
+            "departure": 10862,
+            "arrival": 10770
         },
         {
             "source": "MCO",
             "target": "PHL",
-            "value": "7034"
-        },
-        {
-            "source": "MCO",
-            "target": "JFK",
-            "value": "5371"
-        },
-        {
-            "source": "MIA",
-            "target": "ATL",
-            "value": "6623"
+            "totalFlightBeetween": 14066,
+            "departure": 7034,
+            "arrival": 7032
         },
         {
             "source": "MSP",
             "target": "ORD",
-            "value": "9356"
+            "totalFlightBeetween": 19044,
+            "departure": 9356,
+            "arrival": 9688
         },
         {
             "source": "MSP",
             "target": "DTW",
-            "value": "5459"
-        },
-        {
-            "source": "MSP",
-            "target": "DEN",
-            "value": "5374"
-        },
-        {
-            "source": "MSP",
-            "target": "ATL",
-            "value": "5369"
-        },
-        {
-            "source": "OAK",
-            "target": "LAX",
-            "value": "7578"
+            "totalFlightBeetween": "5459",
+            "departure": 5459,
+            "arrival": 0
         },
         {
             "source": "OAK",
             "target": "SAN",
-            "value": "5851"
-        },
-        {
-            "source": "OAK",
-            "target": "BUR",
-            "value": "5420"
+            "totalFlightBeetween": 11682,
+            "departure": 5851,
+            "arrival": 5831
         },
         {
             "source": "OAK",
             "target": "SEA",
-            "value": "5047"
-        },
-        {
-            "source": "OGG",
-            "target": "HNL",
-            "value": "12383"
+            "totalFlightBeetween": 10142,
+            "departure": 5047,
+            "arrival": 5095
         },
         {
             "source": "ONT",
             "target": "PHX",
-            "value": "5628"
-        },
-        {
-            "source": "ORD",
-            "target": "LGA",
-            "value": "10770"
-        },
-        {
-            "source": "ORD",
-            "target": "MSP",
-            "value": "9688"
-        },
-        {
-            "source": "ORD",
-            "target": "DFW",
-            "value": "8093"
-        },
-        {
-            "source": "ORD",
-            "target": "DTW",
-            "value": "7602"
-        },
-        {
-            "source": "ORD",
-            "target": "ATL",
-            "value": "7449"
-        },
-        {
-            "source": "ORD",
-            "target": "DCA",
-            "value": "7430"
-        },
-        {
-            "source": "ORD",
-            "target": "EWR",
-            "value": "7174"
-        },
-        {
-            "source": "ORD",
-            "target": "BOS",
-            "value": "7133"
-        },
-        {
-            "source": "ORD",
-            "target": "LAX",
-            "value": "6974"
+            "totalFlightBeetween": 11255,
+            "departure": 5628,
+            "arrival": 5627
         },
         {
             "source": "ORD",
             "target": "PHL",
-            "value": "6733"
-        },
-        {
-            "source": "ORD",
-            "target": "CLT",
-            "value": "6013"
-        },
-        {
-            "source": "ORD",
-            "target": "CVG",
-            "value": "5993"
-        },
-        {
-            "source": "ORD",
-            "target": "DEN",
-            "value": "5773"
+            "totalFlightBeetween": 13811,
+            "departure": 6733,
+            "arrival": 7078
         },
         {
             "source": "ORD",
             "target": "SFO",
-            "value": "5524"
-        },
-        {
-            "source": "ORD",
-            "target": "IAH",
-            "value": "5463"
-        },
-        {
-            "source": "ORD",
-            "target": "LAS",
-            "value": "5257"
+            "totalFlightBeetween": 11270,
+            "departure": 5524,
+            "arrival": 5746
         },
         {
             "source": "ORD",
             "target": "PHX",
-            "value": "5124"
-        },
-        {
-            "source": "PHL",
-            "target": "ORD",
-            "value": "7078"
-        },
-        {
-            "source": "PHL",
-            "target": "MCO",
-            "value": "7032"
-        },
-        {
-            "source": "PHL",
-            "target": "ATL",
-            "value": "6918"
-        },
-        {
-            "source": "PHL",
-            "target": "BOS",
-            "value": "6384"
-        },
-        {
-            "source": "PHX",
-            "target": "LAS",
-            "value": "10337"
-        },
-        {
-            "source": "PHX",
-            "target": "LAX",
-            "value": "9992"
-        },
-        {
-            "source": "PHX",
-            "target": "DEN",
-            "value": "8402"
+            "totalFlightBeetween": 10254,
+            "departure": 5124,
+            "arrival": 5130
         },
         {
             "source": "PHX",
             "target": "SAN",
-            "value": "7609"
+            "totalFlightBeetween": 15190,
+            "departure": 7609,
+            "arrival": 7581
         },
         {
             "source": "PHX",
             "target": "SLC",
-            "value": "7177"
-        },
-        {
-            "source": "PHX",
-            "target": "ONT",
-            "value": "5627"
+            "totalFlightBeetween": 14345,
+            "departure": 7177,
+            "arrival": 7168
         },
         {
             "source": "PHX",
             "target": "SNA",
-            "value": "5497"
-        },
-        {
-            "source": "PHX",
-            "target": "DFW",
-            "value": "5387"
-        },
-        {
-            "source": "PHX",
-            "target": "ABQ",
-            "value": "5234"
-        },
-        {
-            "source": "PHX",
-            "target": "ORD",
-            "value": "5130"
+            "totalFlightBeetween": 10974,
+            "departure": 5497,
+            "arrival": 5477
         },
         {
             "source": "PHX",
             "target": "SEA",
-            "value": "5072"
-        },
-        {
-            "source": "RDU",
-            "target": "ATL",
-            "value": "5418"
-        },
-        {
-            "source": "SAN",
-            "target": "LAX",
-            "value": "11224"
-        },
-        {
-            "source": "SAN",
-            "target": "PHX",
-            "value": "7581"
+            "totalFlightBeetween": 10134,
+            "departure": 5072,
+            "arrival": 5062
         },
         {
             "source": "SAN",
             "target": "SFO",
-            "value": "6769"
-        },
-        {
-            "source": "SAN",
-            "target": "LAS",
-            "value": "5902"
-        },
-        {
-            "source": "SAN",
-            "target": "OAK",
-            "value": "5831"
+            "totalFlightBeetween": 13081,
+            "departure": 6769,
+            "arrival": 6312
         },
         {
             "source": "SAN",
             "target": "SJC",
-            "value": "5286"
-        },
-        {
-            "source": "SAN",
-            "target": "DEN",
-            "value": "5263"
-        },
-        {
-            "source": "SAT",
-            "target": "DFW",
-            "value": "5413"
-        },
-        {
-            "source": "SEA",
-            "target": "LAX",
-            "value": "6865"
-        },
-        {
-            "source": "SEA",
-            "target": "DEN",
-            "value": "6623"
-        },
-        {
-            "source": "SEA",
-            "target": "ANC",
-            "value": "6256"
+            "totalFlightBeetween": 10540,
+            "departure": 5286,
+            "arrival": 5254
         },
         {
             "source": "SEA",
             "target": "SFO",
-            "value": "5409"
-        },
-        {
-            "source": "SEA",
-            "target": "OAK",
-            "value": "5095"
-        },
-        {
-            "source": "SEA",
-            "target": "PHX",
-            "value": "5062"
-        },
-        {
-            "source": "SEA",
-            "target": "LAS",
-            "value": "5051"
-        },
-        {
-            "source": "SFO",
-            "target": "LAX",
-            "value": "13788"
-        },
-        {
-            "source": "SFO",
-            "target": "LAS",
-            "value": "7007"
-        },
-        {
-            "source": "SFO",
-            "target": "JFK",
-            "value": "6971"
-        },
-        {
-            "source": "SFO",
-            "target": "SAN",
-            "value": "6312"
-        },
-        {
-            "source": "SFO",
-            "target": "ORD",
-            "value": "5746"
-        },
-        {
-            "source": "SFO",
-            "target": "SEA",
-            "value": "5414"
-        },
-        {
-            "source": "SFO",
-            "target": "DEN",
-            "value": "5374"
-        },
-        {
-            "source": "SJC",
-            "target": "LAX",
-            "value": "8939"
+            "totalFlightBeetween": 10823,
+            "departure": 5409,
+            "arrival": 5414
         },
         {
             "source": "SJC",
             "target": "SNA",
-            "value": "5383"
-        },
-        {
-            "source": "SJC",
-            "target": "SAN",
-            "value": "5254"
-        },
-        {
-            "source": "SLC",
-            "target": "DEN",
-            "value": "9269"
-        },
-        {
-            "source": "SLC",
-            "target": "PHX",
-            "value": "7168"
-        },
-        {
-            "source": "SLC",
-            "target": "LAS",
-            "value": "5373"
-        },
-        {
-            "source": "SLC",
-            "target": "LAX",
-            "value": "5178"
-        },
-        {
-            "source": "SMF",
-            "target": "LAX",
-            "value": "5717"
-        },
-        {
-            "source": "SNA",
-            "target": "PHX",
-            "value": "5477"
-        },
-        {
-            "source": "SNA",
-            "target": "SJC",
-            "value": "5401"
-        },
-        {
-            "source": "TPA",
-            "target": "ATL",
-            "value": "7313"
+            "totalFlightBeetween": 10784,
+            "departure": 5383,
+            "arrival": 5401
         }
     ]
 }

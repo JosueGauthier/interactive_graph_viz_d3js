@@ -8,7 +8,7 @@
 window.onload = () => {
 
   //get heigth and width in our JS
-  var screenWidth = 1 * window.screen.width;
+  var screenWidth = 0.95 * window.screen.width;
   var screenHeight = 0.85 * window.screen.height;
   // set the dimensions and margins of the graph
   /* var margin = { top: 0.04 * window.screen.height, right: screenWidth / 20, bottom: 0.05 * window.screen.height, left: screenWidth / 20 },
@@ -19,7 +19,7 @@ window.onload = () => {
     .attr("width", screenWidth)
     .attr("height", screenHeight)
     .append("g");
-    
+
 
 
   var svg = d3.select("svg"),
@@ -31,7 +31,7 @@ window.onload = () => {
   var simulation = d3.forceSimulation()
     .force("link", d3.forceLink().id(function (d) { return d.id; }))
     .force("charge", d3.forceManyBody().strength(-100))
-    .force("center", d3.forceCenter(width/2 , height / 2));
+    .force("center", d3.forceCenter(width / 2, height / 2));
 
 
   d3.json("input.json").then(function (data) {
@@ -41,8 +41,41 @@ window.onload = () => {
       .style("opacity", 0);
 
 
-    var linkWidth = d3.scaleLinear().range([0.2, 3]);
-    linkWidth.domain([0, d3.max(data.links, function (d) { return d.value; })]);
+    var linkWidth = d3.scaleLinear().range([0.2, 4]);
+    linkWidth.domain([0, d3.max(data.links, function (d) { return d.totalFlightBeetween; })]);
+
+
+    var gradient = svg.append("svg:defs")
+      .append("svg:linearGradient")
+      .attr("id", "gradient")
+      .attr("x1", "0%")
+      .attr("y1", "0%")
+      .attr("x2", "100%")
+      .attr("y2", "100%");
+
+    gradient.append("svg:stop")
+      .attr("offset", "0%")
+      .attr("stop-color", "green")
+      .attr("stop-opacity", 1);
+
+    gradient.append("svg:stop")
+      .attr("offset", "50%")
+      .attr("stop-color", "green")
+      .attr("stop-opacity", 1);
+
+    gradient.append("svg:stop")
+      .attr("offset", "50%")
+      .attr("stop-color", "red")
+      .attr("stop-opacity", 1);
+
+    gradient.append("svg:stop")
+      .attr("offset", "100%")
+      .attr("stop-color", "red")
+      .attr("stop-opacity", 1);
+
+
+
+
 
 
 
@@ -52,11 +85,11 @@ window.onload = () => {
       .data(data.links)
       .enter().append("line")
       .on("mouseover", function (d) {
-        console.log(d.value)
+        console.log(d.totalFlightBeetween)
         div.transition()
           .duration(200)
           .style("opacity", .9);
-        div.html(d.value + "<br>")
+        div.html(d.totalFlightBeetween + "<br>")
           .style("left", (d3.event.pageX) + "px")
           .style("top", (d3.event.pageY) + "px");
       })
@@ -65,7 +98,11 @@ window.onload = () => {
           .duration(500)
           .style("opacity", 0);
       })
-      .attr("stroke-width", function (d) { return linkWidth(d.value) });
+      .attr("stroke", "url(#gradient)")
+      /* .attr("stroke", function (d) {
+        return "red";
+      }) */
+      .attr("stroke-width", function (d) { return linkWidth(d.totalFlightBeetween) });
 
     /* 
         var linksout = svg.append("g")

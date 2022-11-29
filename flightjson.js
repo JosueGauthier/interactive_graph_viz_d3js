@@ -15,6 +15,10 @@ csv()
     })
 
 
+
+
+
+
 function formatData(data) {
 
 
@@ -30,8 +34,8 @@ function formatData(data) {
 
         //check for your empty or 'None' fields here
 
-        if (r.origin) {
-            console.log(r.origin)
+        if (r.origin && r.destination && r.count) {
+            //console.log(r.origin)
 
             var indexOrigin = formatted.nodes.findIndex(x => x.id == r.origin);
             var indexDestination = formatted.nodes.findIndex(x => x.id == r.destination);
@@ -59,12 +63,25 @@ function formatData(data) {
         }
 
         if (r.origin && r.destination && r.count) {
-            formatted.links.push({ source: r.origin, target: r.destination, value: r.count });
+
+            var indexOriginLinks = formatted.links.findIndex((x) => {
+                return (x.source == r.origin && x.target == r.destination) || (x.target == r.origin && x.source == r.destination)
+            });
+
+            console.log(indexOriginLinks)
+            if (indexOriginLinks === -1) {
+                formatted.links.push({ source: r.origin, target: r.destination, totalFlightBeetween: r.count, departure : parseInt(r.count) ,arrival :0 });
+            } else {
+                formatted.links[indexOriginLinks].totalFlightBeetween = parseInt(formatted.links[indexOriginLinks].totalFlightBeetween) + parseInt(r.count)
+                formatted.links[indexOriginLinks].arrival = parseInt(r.count)
+            }
+
+
         }
     });
 
     //do something with the finished product
-    console.log(formatted);
+    //console.log(formatted);
     var json = JSON.stringify(formatted);
 
     fs.writeFile("input.json", JSON.stringify(formatted), function (err) {

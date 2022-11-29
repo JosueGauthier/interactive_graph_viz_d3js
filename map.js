@@ -1,5 +1,5 @@
 // Waiting until document has loaded
-import airport_codes_JSON from './airport_codes_simplified.json' assert {type: 'json'};
+import flight_and_airport_JSON from './flight_and_airport.json' assert {type: 'json'};
 
 
 
@@ -11,11 +11,14 @@ window.onload = () => {
 
   var color = d3.scaleOrdinal(d3.schemeCategory10);
 
+
+
+
   // The svg
   const svg = d3.select("svg")
     .attr("width", screenWidth)
     .attr("height", screenHeight)
-  
+
   var width = +svg.attr("width");
   var height = +svg.attr("height");
 
@@ -26,21 +29,27 @@ window.onload = () => {
     .translate([width / 2, height / 2])
 
 
-  // Create data for circles:
-  /*   const markers = [
-      { long: -90.083, lat: 42.149 }, // corsica
-      { long: 7.26, lat: 43.71 }, // nice
-      { long: 2.349, lat: 48.864 }, // Paris
-      { long: -1.397, lat: 43.664 }, // Hossegor
-      { long: 3.075, lat: 50.640 }, // Lille
-      { long: -3.83, lat: 58 }, // Morlaix
-    ]; */
+  //console.log(flight_and_airport_JSON);
 
 
-  console.log(airport_codes_JSON);
 
 
-  const markers = airport_codes_JSON;
+  const dataSet = flight_and_airport_JSON;
+
+  var colorScale = d3.scaleOrdinal().domain(dataSet.nodes)
+    .range(d3.schemeSet3);
+
+  var r = d3.scaleLinear().range([10, 25]);
+  r.domain([0, d3.max(dataSet.nodes, function (d) { return d.totalFlight; })]);
+
+  var linkWidth = d3.scaleLinear().range([0.2, 15]);
+  linkWidth.domain([0, d3.max(dataSet.links, function (d) { return d.totalFlightBeetween; })]);
+
+
+
+  var div = d3.select(".graph").append("div")
+    .attr("class", "tooltip")
+    .style("opacity", 0);
 
 
 
@@ -56,25 +65,143 @@ window.onload = () => {
       .selectAll("path")
       .data(data.features)
       .join("path")
+      .style("stroke", "white")
+      .attr("stroke-opacity", 1)
+      .attr("stroke-width", 2)
       .attr("fill", "#b8b8b8")
+      .style("opacity", 0.3)
       .attr("d", d3.geoPath()
         .projection(projection)
       )
-      .style("stroke", "black")
-      .style("opacity", .3)
+      ;
+
+
+
+    var link = svg.append("g")
+      .attr("class", "linkss")
+      .selectAll("line")
+      .data(dataSet.links)
+      .enter().append("line")
+      .attr("x1", function (d) { return projection([d.sourceLongitude, d.sourceLatitude])[0] })
+      .attr("y1", function (d) { return projection([d.sourceLongitude, d.sourceLatitude])[1] })
+      .attr("x2", function (d) { return projection([d.targetLongitude, d.targetLatitude])[0] })
+      .attr("y2", function (d) { return projection([d.targetLongitude, d.targetLatitude])[1] })
+      //.attr("fill", "red")
+      .attr("stroke", "#999")
+      .attr("stroke-opacity", 0.5)
+      .attr("stroke-width", function (d) { return linkWidth(d.totalFlightBeetween) })
+
+      .on("mouseover", function (d) {
+        console.log(d.totalFlightBeetween)
+        d3.select(this).attr("stroke", "red")
+        d3.select(this).attr("stroke-opacity", 1)
+
+        div.transition()
+          .duration(200)
+          .style("opacity", .9);
+        div.html(d.totalFlightBeetween)
+          .style("left", (d3.event.pageX) + "px")
+          .style("top", (d3.event.pageY) + "px");
+
+
+
+
+      })
+      .on("mouseout", function (d) {
+        d3.select(this).attr("stroke", "#999")
+        d3.select(this).attr("stroke-opacity", 0.5)
+
+        div.transition()
+          .duration(500)
+          .style("opacity", 0);
+
+      });
+
+
+
 
     // Add circles:
     svg
       .selectAll("myCircles")
-      .data(markers)
+      .data(dataSet.nodes)
       .join("circle")
-      .attr("cx", d => projection([d.longitude, d.latitude])[0])
+      .attr("cx", function (d) {
+
+        //console.log(projection([d.longitude, d.latitude])[0])
+        return projection([d.longitude, d.latitude])[0];
+      })
       .attr("cy", d => projection([d.longitude, d.latitude])[1])
-      .attr("r", 14)
-      .style("fill", "69b3a2")
-      .attr("stroke", "#69b3a2")
-      .attr("stroke-width", 3)
-      .attr("fill-opacity", .4)
+      .attr("r", function (d) { return r(d.totalFlight); })
+      //.style("fill", "69b3a2")
+      .attr("stroke", "white")
+      .attr("stroke-width", 1)
+      .attr("stroke-opacity", 0.6)
+      .attr("fill-opacity", 0.8)
+      .on("mouseover", function (d) {
+        console.log(d.id)
+        div.transition()
+          .duration(200)
+          .style("opacity", .9);
+        div.html(d.id + "<br>" + d.totalFlight)
+          .style("left", (d3.event.pageX) + "px")
+          .style("top", (d3.event.pageY) + "px");
+      })
+      .on("mouseout", function (d) {
+        div.transition()
+          .duration(500)
+          .style("opacity", 0);
+      })
+      .style("fill", function (d) { return colorScale(d.state) });
+
+
+
+
+
+
+
+
+    /* 
+    
+     */
+
+
+
+
+
+
+
+
+    /* svg 
+    .selectAll("myLines")
+    .data(dataSet.nodes)
+    .join("line")
+    .attr("cx", d => projection([d.longitude, d.latitude])[0])
+    .attr("cy", d => projection([d.longitude, d.latitude])[0])
+    .attr("r", function (d) { return r(d.totalFlight); })
+    .attr("stroke", "white")
+    .attr("stroke-width", 1)
+    .attr("stroke-opacity", 0.6)
+    .attr("fill-opacity", 0.8)
+    .style("fill", "red")
+    ;
+*/
+
+
+    /* .on("mouseover", function (d) {
+      console.log(d.totalFlightBeetween)
+      div.transition()
+        .duration(200)
+        .style("opacity", .9);
+      div.html(d.totalFlightBeetween + "<br>")
+        .style("left", (d3.event.pageX) + "px")
+        .style("top", (d3.event.pageY) + "px");
+    })
+    .on("mouseout", function (d) {
+      div.transition()
+        .duration(500)
+        .style("opacity", 0);
+    })
+     */
   })
 
 

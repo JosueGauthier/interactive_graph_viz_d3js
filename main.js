@@ -28,6 +28,13 @@ window.onload = () => {
 
   var color = d3.scaleOrdinal(d3.schemeCategory10);
 
+  var linkWidth = d3.scaleLinear().range([0.2, 4]);
+  linkWidth.domain([0, d3.max(data.links, function (d) { return d.totalFlightBeetween; })]);
+
+  var r = d3.scaleLinear().range([3, 15]);
+  r.domain([0, d3.max(data.nodes, function (d) { return d.totalFlight; })]);
+
+
   var simulation = d3.forceSimulation()
     .force("link", d3.forceLink().id(function (d) { return d.id; }))
     .force("charge", d3.forceManyBody().strength(-100))
@@ -39,13 +46,6 @@ window.onload = () => {
     var div = d3.select(".graph").append("div")
       .attr("class", "tooltip")
       .style("opacity", 0);
-
-
-    var linkWidth = d3.scaleLinear().range([0.2, 4]);
-    linkWidth.domain([0, d3.max(data.links, function (d) { return d.totalFlightBeetween; })]);
-
-
-
 
 
     var link = svg.append("g")
@@ -67,43 +67,7 @@ window.onload = () => {
           .duration(500)
           .style("opacity", 0);
       })
-      .attr("stroke",function (d) {
-        return "red";
-      })
-      /* .attr("stroke", function (d) {
-        return "red";
-      }) */
       .attr("stroke-width", function (d) { return linkWidth(d.totalFlightBeetween) });
-
-    /* 
-        var linksout = svg.append("g")
-          .attr("class", "linksout")
-          .selectAll("line")
-          .data(data.links)
-          .enter().append("line")
-          .on("mouseover", function (d) {
-            console.log(d.value)
-            div.transition()
-              .duration(200)
-              .style("opacity", .9);
-            div.html(d.value + "<br>")
-              .style("left", (d3.event.pageX) + "px")
-              .style("top", (d3.event.pageY) + "px");
-          })
-          .on("mouseout", function (d) {
-            div.transition()
-              .duration(500)
-              .style("opacity", 0);
-          })
-          
-          .attr("stroke-width", function (d) { return Math.exp(d.value / 10000); }); */
-
-
-    var r = d3.scaleLinear().range([3, 15]);
-    r.domain([0, d3.max(data.nodes, function (d) { return d.totalFlight; })]);
-
-
-
 
     var node = svg.append("g")
       .attr("class", "nodes")
@@ -131,34 +95,26 @@ window.onload = () => {
         .on("drag", dragged)
         .on("end", dragended));
 
-    node.append("text")
-      .text(function (d) {
-        return d.id;
-
-      })
-      .style("font-size", 15)
-      .style("fill", "red")
-      .attr('alignment-baseline', 'middle')
-      .attr('x', 6)
-      .attr('y', 3);
-
-    node.append("title")
-      .text(function (d) { return d.id; });
-
+    /*     node.append("text")
+          .text(function (d) {
+            return d.id;
+    
+          })
+          .style("font-size", 15)
+          .style("fill", "red")
+          .attr('alignment-baseline', 'middle')
+          .attr('x', 6)
+          .attr('y', 3);
+    
+        node.append("title")
+          .text(function (d) { return d.id; });
+     */
     simulation
       .nodes(data.nodes)
       .on("tick", ticked);
 
-    /* simulation.force("linksout")
-      .links(data.links); */
-
-
     simulation.force("link")
       .links(data.links);
-
-
-
-
 
     function ticked() {
 
@@ -194,7 +150,7 @@ window.onload = () => {
 
 
 
-  
+
 
 
 };

@@ -47,9 +47,6 @@ function formatData(data) {
             else {
                 formatted.nodes[indexDestination].totalFlight = parseInt(formatted.nodes[indexDestination].totalFlight) + parseInt(r.count)
             }
-
-
-
         }
 
         if (r.origin && r.destination && r.count) {

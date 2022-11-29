@@ -10,8 +10,6 @@ body {
     cursor: default;
 }
 
-
-
 div.tooltip {
     position: absolute;
     text-align: center;
@@ -26,115 +24,15 @@ div.tooltip {
     pointer-events: none;
 }
 
-
-
-.container {
-    height: 100vh;
-    width: 100vw;
-    background-color: bisque;
-    display: flex;
-    flex-direction: row;
-
-}
-
-.radar {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 10vh;
-    margin-top: 4vh;
-}
-
-.info {
-    height: 35vh;
-}
-
-.radarChart {}
-
-.styled-table {
-    /* border-collapse: collapse; */
-    font-size: 0.9em;
-    font-family: sans-serif;
-    min-width: 400px;
-    border: 1px solid;
-    border-radius: 20px;
-
-    /* box-shadow: 0 0 20px rgba(0, 0, 0, 0.15); */
-}
-
-.styled-table thead tr {
-    background-color: #009879;
-    color: #ffffff;
-    text-align: left;
-}
-
-.styled-table th,
-.styled-table td {
-    padding: 12px 15px;
-}
-
-
-.styled-table tbody tr {
-    border-bottom: 1px solid #dddddd;
-}
-
-
-
-.styled-table tbody tr:last-of-type {
-    border-bottom: 2px solid #009879;
-}
-
-.styled-table tbody tr.active-row {
-    font-weight: bold;
-    color: #009879;
-}
-
-.graph {
-    height: 100vh;
-    width: 100vw;
-    top: 0px;
-    /* background-color: #009879; */
-
-}
-
-
-svg{
-
-    /* background-color: bisque; */
-
-
-}
-.legend-container {
-
-    width: 200px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: center;
-    z-index: 1;
-    position: absolute;
-    left: 50vw;
-    top: 4vh;
-
-
-
-}
-
-
-
 /* Assign 3 */
 
 
- .links line {
+.links line {
     stroke: #999;
     stroke-opacity: 0.6;
 }
 
-.linksout line {
-    stroke: rgb(167, 14, 14);
-    stroke-opacity: 0.6;
-} 
+
 
 .nodes circle {
     stroke: #fff;
@@ -145,9 +43,4 @@ text {
     font-family: sans-serif;
     color: #009879;
     font-size: 20px;
-}
-
-svg{
-
-    background-color: #009879;
 }

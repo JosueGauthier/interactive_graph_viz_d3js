@@ -13,7 +13,7 @@ var dataFlightGlobal;
 csvFlight()
     .fromFile(csvFlightPath)
     .then(function (jsonArrayObjFlight) { //when parse finished, result will be emitted here.
-        //console.log(jsonArrayObjFlight);
+        console.log(jsonArrayObjFlight);
         dataFlightGlobal = jsonArrayObjFlight;
     })
 
@@ -35,7 +35,7 @@ function formatDataAirport(data) {
         if (r.iata && r.name && r.city && r.state && r.country && r.latitude && r.longitude) {
 
             var airportIndex = dataFlightGlobal.findIndex(x => x.origin == r.iata);
-            console.log(airportIndex);
+            //console.log(airportIndex);
 
             if (airportIndex !== -1) {
                 formatted.push({

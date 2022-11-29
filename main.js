@@ -45,37 +45,6 @@ window.onload = () => {
     linkWidth.domain([0, d3.max(data.links, function (d) { return d.totalFlightBeetween; })]);
 
 
-    var gradient = svg.append("svg:defs")
-      .append("svg:linearGradient")
-      .attr("id", "gradient")
-      .attr("x1", "0%")
-      .attr("y1", "0%")
-      .attr("x2", "100%")
-      .attr("y2", "100%");
-
-    gradient.append("svg:stop")
-      .attr("offset", "0%")
-      .attr("stop-color", "green")
-      .attr("stop-opacity", 1);
-
-    gradient.append("svg:stop")
-      .attr("offset", "50%")
-      .attr("stop-color", "green")
-      .attr("stop-opacity", 1);
-
-    gradient.append("svg:stop")
-      .attr("offset", "50%")
-      .attr("stop-color", "red")
-      .attr("stop-opacity", 1);
-
-    gradient.append("svg:stop")
-      .attr("offset", "100%")
-      .attr("stop-color", "red")
-      .attr("stop-opacity", 1);
-
-
-
-
 
 
 
@@ -98,7 +67,9 @@ window.onload = () => {
           .duration(500)
           .style("opacity", 0);
       })
-      .attr("stroke", "url(#gradient)")
+      .attr("stroke",function (d) {
+        return "red";
+      })
       /* .attr("stroke", function (d) {
         return "red";
       }) */
@@ -219,6 +190,11 @@ window.onload = () => {
     d.fx = null;
     d.fy = null;
   }
+
+
+
+
+  
 
 
 };

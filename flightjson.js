@@ -14,14 +14,7 @@ csv()
         formatData(jsonArrayObj);
     })
 
-
-
-
-
-
 function formatData(data) {
-
-
     var formatted = {
         nodes: [],
         links: []
@@ -30,10 +23,7 @@ function formatData(data) {
     compteur = 1
 
     data.forEach(function (r) {
-
-
         //check for your empty or 'None' fields here
-
         if (r.origin && r.destination && r.count) {
             //console.log(r.origin)
 
@@ -70,7 +60,7 @@ function formatData(data) {
 
             console.log(indexOriginLinks)
             if (indexOriginLinks === -1) {
-                formatted.links.push({ source: r.origin, target: r.destination, totalFlightBeetween: r.count, departure : parseInt(r.count) ,arrival :0 });
+                formatted.links.push({ source: r.origin, target: r.destination, totalFlightBeetween: r.count, departure: parseInt(r.count), arrival: 0 });
             } else {
                 formatted.links[indexOriginLinks].totalFlightBeetween = parseInt(formatted.links[indexOriginLinks].totalFlightBeetween) + parseInt(r.count)
                 formatted.links[indexOriginLinks].arrival = parseInt(r.count)

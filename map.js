@@ -99,9 +99,9 @@ function MapGraphSVG() {
         .attr("cy", d => projection([d.longitude, d.latitude])[1])
         .attr("r", function (d) { return r(d.totalFlight); })
         .attr("stroke", "white")
-        .attr("stroke-width", 1)
-        .attr("stroke-opacity", 0.6)
-        .attr("fill-opacity", 0.8)
+        .attr("stroke-width", 2)
+        .attr("stroke-opacity", 0.8)
+        .attr("fill-opacity", 1)
         .on("mouseover", function (d) {
           div.transition()
             .duration(200)
@@ -120,7 +120,7 @@ function MapGraphSVG() {
         })
         .on("click", function (d) {
           if (isclicked === false) {
-            d3.selectAll(":not([id*=" + d.id + "])").attr("stroke-opacity", "0");
+            d3.selectAll("line:not([id*=" + d.id + "])").attr("stroke-opacity", "0");
             isclicked = !isclicked;
           } else {
             d3.selectAll("line").attr("stroke-opacity", "1")

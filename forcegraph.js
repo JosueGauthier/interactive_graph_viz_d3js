@@ -85,7 +85,7 @@ function ForceGraphSVG(){
                 })
                 .on("click", function (d) {
                     if (isclicked === false) {
-                        d3.selectAll(":not([id*=" + d.id + "])").attr("stroke-opacity", "0");
+                        d3.selectAll("line:not([id*=" + d.id + "])").attr("stroke-opacity", "0");
                         isclicked = !isclicked;
                     } else {
                         d3.selectAll("line").attr("stroke-opacity", "1")

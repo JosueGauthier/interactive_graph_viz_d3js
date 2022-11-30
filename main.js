@@ -1,192 +1,76 @@
 // Waiting until document has loaded
 
 
+var previousvalueBtn ="Up";
+var valueBtn = document.getElementById("myBtn").value;
+
+function tgl() {
+  var t = document.getElementById("myBtn");
+  if (t.value == "ON") {
+    t.value = "OFF";
+
+    valueBtn = "OFF";
+    previousvalueBtn ="Up";
+
+
+  }
+  else {
+    t.value = "ON";
+    
+    valueBtn = "ON";
+    previousvalueBtn ="Up";
+
+
+  }
+}
 
 
 
 
 window.onload = () => {
 
-  //get heigth and width in our JS
-  var screenWidth = 0.95 * window.screen.width;
-  var screenHeight = 0.85 * window.screen.height;
-  // set the dimensions and margins of the graph
-  /* var margin = { top: 0.04 * window.screen.height, right: screenWidth / 20, bottom: 0.05 * window.screen.height, left: screenWidth / 20 },
-    width = screenWidth,
-    height = screenHeight; */
+  setInterval(function () {
+    if (valueBtn === "ON" && previousvalueBtn ==="Up") {
+      console.log("onnnn")
+      previousvalueBtn = "Down"
+      ForceGraphSVG();
 
-  /*   var svg = d3.select(".graph").append("svg")
-      .attr("width", screenWidth)
-      .attr("height", screenHeight)
-      .append("g");
-  
-  
-  
-    var svg = d3.select("svg"),
-      width = +svg.attr("width"),
-      height = +svg.attr("height"); */
+      temp = document.getElementById("svgContainer");
+      if (temp) {
+        temp.remove();
+      }
 
+      //MapGraphSVG();
 
-  const svg = d3.select("svg")
-    .attr("width", screenWidth)
-    .attr("height", screenHeight)
+    } else if (valueBtn === "OFF" && previousvalueBtn ==="Up") {
+      console.log("offff")
+      previousvalueBtn = "Down"
 
-  var width = +svg.attr("width");
-  var height = +svg.attr("height");
+      temp = document.getElementById("svgContainer");
+      if (temp) {
+        temp.remove();
+      }
 
-  var color = d3.scaleOrdinal(d3.schemeCategory10);
-
-
-
-
-
-
-  var simulation = d3.forceSimulation()
-    .force("link", d3.forceLink().id(function (d) { return d.id; }))
-    .force("charge", d3.forceManyBody().strength(-100))
-    .force("center", d3.forceCenter(width / 2, height / 2));
-
-
-  d3.json("input.json").then(function (data) {
-
-
-    var linkWidth = d3.scaleLinear().range([0.2, 6]);
-    linkWidth.domain([0, d3.max(data.links, function (d) { return d.totalFlightBeetween; })]);
-
-    var r = d3.scaleLinear().range([3, 15]);
-    r.domain([0, d3.max(data.nodes, function (d) { return d.totalFlight; })]);
-
-    var div = d3.select(".graph").append("div")
-      .attr("class", "tooltip")
-      .style("opacity", 0);
-
-
-    var link = svg.append("g")
-      .attr("class", "links")
-      .selectAll("line")
-      .data(data.links)
-      .enter().append("line")
-      .attr("id", function(d) { return d.source+d.target})
-      .attr("stroke", "#999")
-      .attr("stroke-opacity", 0.8)
-      .attr("stroke-width", function (d) { return linkWidth(d.totalFlightBeetween) })
-      .on("mouseover", function (d) {
-        console.log(d.totalFlightBeetween)
-        console.log(d3.select(this).attr("class"))
-        console.log(d3.select(this).attr("id"))
-        div.transition()
-          .duration(200)
-          .style("opacity", .9);
-        div.html("Total flights: "+d.totalFlightBeetween + "<br>"+"Arrivals: "+d.arrival+ "<br>"+"Departures: "+d.departure)
-          .style("left", (d3.event.pageX) + "px")
-          .style("top", (d3.event.pageY) + "px");
-        d3.select(this).attr("stroke", "red")
-        //d3.select(this).attr("stroke-opacity", 1)
-      })
-      .on("mouseout", function (d) {
-        d3.select(this).attr("stroke", "#999")
-        //d3.select(this).attr("stroke-opacity", 0.5)
-        div.transition()
-          .duration(500)
-          .style("opacity", 0);
-      });
-
-      console.log("aaa")
-
-    
-    var isclicked = false;
-
-    var node = svg.append("g")
-      .attr("class", "nodes")
-      .selectAll("circle")
-      .data(data.nodes)
-      .enter().append("circle")
-      .attr("r", function (d) { return r(d.totalFlight); })
-      .attr("fill", function (d) { return color(d.group); })
+      MapGraphSVG();
       
-      .on("mouseover", function (d) {
-        console.log(d.id)
-        div.transition()
-          .duration(200)
-          .style("opacity", .9);
-        div.html(d.id + "<br>" + d.totalFlight)
-          .style("left", (d3.event.pageX) + "px")
-          .style("top", (d3.event.pageY) + "px");
-        d3.selectAll("[id*="+d.id+"]").attr("stroke", "red")
 
-        //d3.selectAll("line").attr("stroke-opacity", 1)
-      })
-      .on("mouseout", function (d) {
-        div.transition()
-          .duration(500)
-          .style("opacity", 0);
+      
 
-          d3.selectAll("line").attr("stroke", "#999")
-      })
-
-      .on("click", function(d) { 
-
-        if (isclicked === false) {
-          d3.selectAll(":not([id*="+d.id+"])").attr("stroke-opacity", "0");
-          isclicked = !isclicked;
-          
-        }else{
-
-          d3.selectAll(":not([id*="+d.id+"])").attr("stroke-opacity", "1")
-          isclicked = !isclicked;
-
-        }
-
-        
-       })
-      .call(d3.drag()
-        .on("start", dragstarted)
-        .on("drag", dragged)
-        .on("end", dragended));
+      
 
 
-    simulation
-      .nodes(data.nodes)
-      .on("tick", ticked);
+    }else{}
 
-    simulation.force("link")
-      .links(data.links);
-
-    function ticked() {
-
-      link
-        .attr("x1", function (d) { return d.source.x; })
-        .attr("y1", function (d) { return d.source.y; })
-        .attr("x2", function (d) { return d.target.x; })
-        .attr("y2", function (d) { return d.target.y; });
-
-      node
-        .attr("cx", function (d) { return d.x; })
-        .attr("cy", function (d) { return d.y; });
-    }
-  });
-
-  function dragstarted(d) {
-    if (!d3.event.active) simulation.alphaTarget(0.3).restart();
-    d.fx = d.x;
-    d.fy = d.y;
-  }
-
-  function dragged(d) {
-    d.fx = d3.event.x;
-    d.fy = d3.event.y;
-  }
-
-  function dragended(d) {
-    if (!d3.event.active) simulation.alphaTarget(0);
-    d.fx = null;
-    d.fy = null;
-  }
+  }, 40);
 
 
 
+  //ForceGraphSVG();
 
 
 
 
 };
+
+
+

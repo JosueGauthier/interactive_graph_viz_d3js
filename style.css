@@ -27,7 +27,7 @@ div.tooltip {
 /* Assign 3 */
 
 
-.links line {
+.linksssss line {
     stroke: #999;
     stroke-opacity: 0.6;
 }
@@ -43,4 +43,9 @@ text {
     font-family: sans-serif;
     color: #009879;
     font-size: 20px;
+}
+
+
+svg{
+    
 }

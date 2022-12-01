@@ -126,7 +126,7 @@ function MapGraphSVG() {
           div.transition()
             .duration(200)
             .style("opacity", .9);
-          div.html(d.id + "<br>" + "Total flights: " + d.totalFlight)
+          div.html(d.id + " " + d.nameAirport + "<br>" + "Total flights: " + d.totalFlight)
             .style("left", (d3.event.pageX) + "px")
             .style("top", (d3.event.pageY) + "px");
           if (isclicked === false) {

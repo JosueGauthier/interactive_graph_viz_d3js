@@ -4,8 +4,8 @@
 function MapGraphSVG() {
 
   //get heigth and width in our JS
-  var screenWidth = 0.9 * window.screen.width;
-  var screenHeight = 0.9 * window.screen.height;
+  var screenWidth = 1 * window.screen.width;
+  var screenHeight = 1 * window.screen.height;
   // The svg
   const svg = d3.select(".container").append("svg")
     .attr("width", screenWidth)
@@ -18,7 +18,7 @@ function MapGraphSVG() {
   // Map and projection
   const projection = d3.geoMercator()
     .center([-99, 39])                // GPS of location to zoom on
-    .scale(1000)                       // This is like the zoom
+    .scale(900)                       // This is like the zoom
     .translate([width / 2, height / 2])
 
 
@@ -57,6 +57,9 @@ function MapGraphSVG() {
           .projection(projection));
 
 
+      var isclicked = false;
+      var idClicked;
+
 
       var link = svg.append("g")
         .attr("class", "linkss")
@@ -72,24 +75,41 @@ function MapGraphSVG() {
         .attr("stroke-opacity", 0.5)
         .attr("stroke-width", function (d) { return linkWidth(d.totalFlightBeetween) })
         .on("mouseover", function (d) {
-          div.transition()
-            .duration(200)
-            .style("opacity", .9);
-          div.html("Total flights: " + d.totalFlightBeetween + "<br>" + "Arrivals: " + d.arrival + "<br>" + "Departures: " + d.departure)
-            .style("left", (d3.event.pageX) + "px")
-            .style("top", (d3.event.pageY) + "px");
-          d3.select(this).attr("stroke", "red")
+          if (isclicked === false) {
+            div.transition()
+              .duration(200)
+              .style("opacity", .9);
+            div.html("Total flights: " + d.totalFlightBeetween + "<br>" + "Arrivals: " + d.arrival + "<br>" + "Departures: " + d.departure)
+              .style("left", (d3.event.pageX) + "px")
+              .style("top", (d3.event.pageY) + "px");
+            d3.select(this).attr("stroke", "#25fde9").attr("stroke-opacity", 1)
+          } else {
+            if ((this.id).includes(idClicked)) {
+              div.transition()
+                .duration(200)
+                .style("opacity", .9);
+              div.html("Total flights: " + d.totalFlightBeetween + "<br>" + "Arrivals: " + d.arrival + "<br>" + "Departures: " + d.departure)
+                .style("left", (d3.event.pageX) + "px")
+                .style("top", (d3.event.pageY) + "px");
+              d3.select(this).attr("stroke", "#25fde9").attr("stroke-opacity", 1);
+            }
+          }
         })
         .on("mouseout", function (d) {
-          d3.select(this).attr("stroke", "#999")
-          //d3.select(this).attr("stroke-opacity", 0.5)
-          div.transition()
-            .duration(500)
-            .style("opacity", 0);
+          if (isclicked === false) {
+            div.transition()
+              .duration(500)
+              .style("opacity", 0);
+            d3.select(this).attr("stroke", "#999").attr("stroke-opacity", 0.5)
+          } else {
+            if ((this.id).includes(idClicked)) {
+              div.transition()
+                .duration(500)
+                .style("opacity", 0);
+              d3.select(this).attr("stroke", "#999").attr("stroke-opacity", 0.5)
+            }
+          }
         });
-
-
-      var isclicked = false;
       // Add circles:
       svg
         .selectAll("myCircles")
@@ -106,38 +126,37 @@ function MapGraphSVG() {
           div.transition()
             .duration(200)
             .style("opacity", .9);
-          div.html(d.id + "<br>" + "Total flights: " +d.totalFlight)
+          div.html(d.id + "<br>" + "Total flights: " + d.totalFlight)
             .style("left", (d3.event.pageX) + "px")
             .style("top", (d3.event.pageY) + "px");
-          d3.selectAll("[id*=" + d.id + "]").attr("stroke", "red")
+          if (isclicked === false) {
+            d3.selectAll("[id*=" + d.id + "]").attr("stroke", "#25fde9").attr("stroke-opacity", 0.8)
+            d3.selectAll("line:not([id*=" + d.id + "])").attr("stroke-opacity", 0.2)
+          } else {
+          }
         })
         .on("mouseout", function (d) {
           div.transition()
             .duration(500)
             .style("opacity", 0);
-
-          d3.selectAll("line").attr("stroke", "#999")
+          if (isclicked === false) {
+            d3.selectAll("line").attr("stroke", "#999")
+            d3.selectAll("line").attr("stroke-opacity", 0.5)
+          } else {
+          }
         })
         .on("click", function (d) {
           if (isclicked === false) {
-            d3.selectAll("line:not([id*=" + d.id + "])").attr("stroke-opacity", "0");
+            d3.selectAll("line:not([id*=" + d.id + "])").attr("stroke-opacity", 0);
+            d3.selectAll("[id*=" + d.id + "]").attr("stroke", "#999").attr("stroke-opacity", 0.5);
             isclicked = !isclicked;
+            idClicked = d.id;
           } else {
-            d3.selectAll("line").attr("stroke-opacity", "1")
+            d3.selectAll("line").attr("stroke-opacity", 0.5)
             isclicked = !isclicked;
           }
-
         })
         .style("fill", function (d) { return colorScale(d.state) });
-
-
     });
-
   });
-
-
-
-
-
-
 }

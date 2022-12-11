@@ -1,9 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
-
 @import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
 
 body {
@@ -126,9 +124,9 @@ text {
 }
 
 .header {
-  position:absolute;
-  top:0;
-  width: 100vw;;
+  position: absolute;
+  top: 0;
+  width: 100vw;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -146,10 +144,3 @@ h1 {
   height: 70px;
 
 }
-
-.container {
-
-
-
-}
-

@@ -1,5 +1,4 @@
 // Waiting until document has loaded
-//import flight_and_airport_JSON from './flight_and_airport.json' assert {type: 'json'};
 
 function MapGraphSVG() {
 

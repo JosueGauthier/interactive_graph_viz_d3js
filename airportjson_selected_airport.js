@@ -15,15 +15,11 @@ csvFlight()
     .then(function (jsonArrayObjFlight) { //when parse finished, result will be emitted here.
         dataFlightGlobal = jsonArrayObjFlight;
     })
-
-
-
 csvAirport()
     .fromFile(csvAirportPath)
     .then(function (jsonArrayObjAirport) { //when parse finished, result will be emitted here.
         formatDataAirport(jsonArrayObjAirport);
     })
-
 
 function formatDataAirport(data) {
 
@@ -31,9 +27,7 @@ function formatDataAirport(data) {
     data.forEach(function (r) {
 
         if (r.iata && r.name && r.city && r.state && r.country && r.latitude && r.longitude) {
-
             var airportIndex = dataFlightGlobal.findIndex(x => x.origin == r.iata);
-
             if (airportIndex !== -1) {
                 formatted.push({
                     iata: r.iata,
@@ -45,7 +39,6 @@ function formatDataAirport(data) {
                     longitude: parseInt(r.longitude)
                 });
             }
-
         }
     });
     var json = JSON.stringify(formatted);

@@ -19,7 +19,7 @@ function ForceGraphSVG() {
         .force("charge", d3.forceManyBody().strength(-100))
         .force("center", d3.forceCenter(width / 2, height / 2));
 
-    d3.json("input.json").then(function (data) {
+    d3.json("forcegraph.json").then(function (data) {
         var linkWidth = d3.scaleLinear().range([0.2, 6]);
         linkWidth.domain([0, d3.max(data.links, function (d) { return d.totalFlightBeetween; })]);
 

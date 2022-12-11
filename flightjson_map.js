@@ -8,10 +8,6 @@ const csvFilePath = 'flight.csv';
 
 var data = [];
 
-//console.log(csvFilePath);
-
-console.log(airport_codes_simplifiedJSON);
-
 csv()
     .fromFile(csvFilePath)
     .then(function (jsonArrayObj) { //when parse finished, result will be emitted here.
@@ -29,11 +25,8 @@ function formatData(data) {
     data.forEach(function (r) {
         //check for your empty or 'None' fields here
         if (r.origin && r.destination && r.count) {
-            //console.log(r.origin)
-
             var indexOrigin = formatted.nodes.findIndex(x => x.id == r.origin);
             var indexDestination = formatted.nodes.findIndex(x => x.id == r.destination);
-
             var airportIndexOrigin = airport_codes_simplifiedJSON.findIndex(x => x.iata == r.origin);
             var airportIndexDestination = airport_codes_simplifiedJSON.findIndex(x => x.iata == r.destination);
 
@@ -42,23 +35,18 @@ function formatData(data) {
                     id: r.origin,
                     group: compteur,
                     totalFlight: r.count,
-
-
                     nameAirport: airport_codes_simplifiedJSON[airportIndexOrigin].nameAirport,
                     city: airport_codes_simplifiedJSON[airportIndexOrigin].city,
                     state: airport_codes_simplifiedJSON[airportIndexOrigin].state,
                     country: airport_codes_simplifiedJSON[airportIndexOrigin].country,
                     latitude: airport_codes_simplifiedJSON[airportIndexOrigin].latitude,
                     longitude: airport_codes_simplifiedJSON[airportIndexOrigin].longitude,
-
                 });
                 compteur++;
 
             } else {
                 formatted.nodes[indexOrigin].totalFlight = parseInt(formatted.nodes[indexOrigin].totalFlight) + parseInt(r.count)
             }
-
-
             if (indexDestination === -1) {
                 formatted.nodes.push({
                     id: r.destination,
@@ -73,7 +61,6 @@ function formatData(data) {
                     longitude: airport_codes_simplifiedJSON[airportIndexDestination].longitude,
                 });
                 compteur++;
-
             }
             else {
                 formatted.nodes[indexDestination].totalFlight = parseInt(formatted.nodes[indexDestination].totalFlight) + parseInt(r.count)
@@ -101,24 +88,17 @@ function formatData(data) {
                     
                     totalFlightBeetween: r.count, 
                     departure: parseInt(r.count), 
-                    arrival: 0,
-                
-                
-                
+                    arrival: 0,           
                 });
             } else {
                 formatted.links[indexOriginLinks].totalFlightBeetween = parseInt(formatted.links[indexOriginLinks].totalFlightBeetween) + parseInt(r.count)
                 formatted.links[indexOriginLinks].arrival = parseInt(r.count)
             }
-
-
         }
     });
 
     //do something with the finished product
-    //console.log(formatted);
     var json = JSON.stringify(formatted);
-
     fs.writeFile("flight_and_airport.json", JSON.stringify(formatted), function (err) {
         if (err) throw err;
         console.log('complete');

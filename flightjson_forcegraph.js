@@ -68,10 +68,8 @@ function formatData(data) {
     });
 
     //do something with the finished product
-    //console.log(formatted);
     var json = JSON.stringify(formatted);
-
-    fs.writeFile("input.json", JSON.stringify(formatted), function (err) {
+    fs.writeFile("forcegraph.json", JSON.stringify(formatted), function (err) {
         if (err) throw err;
         console.log('complete');
     }
